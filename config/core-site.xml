@@ -4,4 +4,12 @@
         <name>fs.defaultFS</name>
         <value>hdfs://hadoop-master:9000/</value>
     </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>file:///root/hdfs/tmp</value>
+    </property>
+    <property>
+        <name>fs.trash.interval</name>
+        <value>864000</value>
+    </property>
 </configuration>
