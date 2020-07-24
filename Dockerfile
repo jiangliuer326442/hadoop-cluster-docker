@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER KiwenLau <kiwenlau@gmail.com>
+MAINTAINER Mustafa <fanghailiang2016@gmail.com>
 
 WORKDIR /root
 
@@ -40,6 +40,7 @@ RUN mv /tmp/ssh_config ~/.ssh/config && \
 
 RUN chmod +x ~/start-hadoop.sh && \
     chmod +x ~/run-wordcount.sh && \
+    chmod +x $HADOOP_HOME/sbin/mr-jobhistory-daemon.sh && \
     chmod +x $HADOOP_HOME/sbin/start-dfs.sh && \
     chmod +x $HADOOP_HOME/sbin/start-yarn.sh 
 
