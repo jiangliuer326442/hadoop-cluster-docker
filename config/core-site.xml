@@ -2,11 +2,11 @@
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://hadoop-master:9000/</value>
+        <value>hdfs://host01:9000/</value>
     </property>
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>file:///root/hdfs/tmp</value>
+        <value>file:///opt/data/hadoop/hdfs/tmp</value>
     </property>
     <property>
         <name>fs.trash.interval</name>

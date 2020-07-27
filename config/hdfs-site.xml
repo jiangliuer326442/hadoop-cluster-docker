@@ -2,19 +2,19 @@
 <configuration>
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///root/hdfs/namenode</value>
+        <value>file:///opt/data/hadoop/namenode</value>
     </property>
     <property>
         <name>dfs.namenode.http-address</name>
-        <value>hadoop-master:9870</value>
+        <value>host01:9870</value>
     </property>
     <property>
         <name>dfs.namenode.secondary.http-address</name>
-        <value>hadoop-master:9868</value>
+        <value>host01:9868</value>
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///root/hdfs/datanode</value>
+        <value>file:///opt/data/hadoop/datanode</value>
     </property>
     <property>
         <name>dfs.replication</name>

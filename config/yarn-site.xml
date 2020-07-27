@@ -10,7 +10,7 @@
     </property>
     <property>
         <name>yarn.resourcemanager.hostname</name>
-        <value>hadoop-master</value>
+        <value>host01</value>
     </property>
     <property>
         <name>yarn.log-aggregation-enable</name>
@@ -34,6 +34,11 @@
     </property>
     <property>
         <name>yarn.log.server.url</name>
-        <value>http://hadoop-master:19888/jobhistory/job/</value>
+        <value>http://host01:19888/jobhistory/job/</value>
+    </property>
+    <property>
+        <name>yarn.application.classpath</name>
+        <value>/opt/modules/hadoop-3.3.0/etc/hadoop:/opt/modules/hadoop-3.3.0/share/hadoop/common/lib/*:/opt/modules/hadoop-3.3.0/share/hadoop/common/*:/opt/modules/hadoop-3.3.0/share/hadoop/hdfs:/opt/modules/hadoop-3.3.0/share/hadoop/hdfs/lib/*:/opt/modules/hadoop-3.3.0/share/hadoop/hdfs/*:/opt/modules/hadoop-3.3.0/share/hadoop/mapreduce/*:/opt/modules/hadoop-3.3.0/share/hadoop/yarn/lib/*:/opt/modules/hadoop-3.3.0/share/hadoop/yarn/*</value>
     </property>
 </configuration>
+
